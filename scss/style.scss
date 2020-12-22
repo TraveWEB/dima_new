@@ -842,7 +842,7 @@ main {
 /* ------------------------------------ */
 
 .advantages {
-  margin: 60px 0 0 0;
+  margin: 60px 0 60px 0;
 
   .wrapper {
     display: flex;
@@ -1330,7 +1330,7 @@ main {
     margin: 0 auto;
   
     .wrapper {
-      border: 0.104vw solid #61a036;
+      border: 2px solid #61a036;
       border-radius: 0.365vw;
       display: flex;
       justify-content: space-between;

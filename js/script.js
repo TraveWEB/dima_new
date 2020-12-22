@@ -9,13 +9,3 @@ function ibg(){
 }
     
 ibg();
-
-$(document).ready(function(){
-    $('.intro_block').slick({
-        speed: 300,
-        infinite: true,
-        dots: false,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-    });
-});
