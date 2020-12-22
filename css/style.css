@@ -590,7 +590,8 @@ main {
     display: flex;
     justify-content: space-between; }
     .popular .wrapper .popular_blocks .popular_blk {
-      width: 263px; }
+      width: 263px;
+      position: relative; }
       .popular .wrapper .popular_blocks .popular_blk .popular_img {
         width: 260px;
         height: 230px;
@@ -647,16 +648,17 @@ main {
         padding-bottom: 15px; }
       .popular .wrapper .popular_blocks .popular_blk .popular_button {
         width: 100%;
+        position: absolute;
         white-space: normal;
-        padding: 16px 20px;
+        padding: 16px 35px;
         background-color: #61A036;
         border-radius: 7px;
-        border: none;
         color: white;
         font-size: 16px;
         font-family: "Gotham" !important;
         font-weight: 400 !important;
-        line-height: 15px; }
+        line-height: 15px;
+        text-align: center; }
   .popular .wrapper .popular_footer {
     display: flex;
     flex-direction: column;
@@ -669,8 +671,8 @@ main {
       line-height: 21px;
       padding-bottom: 25px; }
     .popular .wrapper .popular_footer .popular-footer-button {
-      width: 225px;
-      height: 50px;
+      white-space: normal;
+      padding: 16px 35px;
       background-color: #61A036;
       border-radius: 7px;
       border: none;
@@ -964,13 +966,14 @@ main {
           padding-bottom: 0.781vw; }
         .popular .wrapper .popular_blocks .popular_blk .popular_button {
           width: 100%;
+          position: absolute;
           white-space: normal;
-          padding: 0.833vw 1.042vw;
+          padding: 0.833vw 1.823vw;
           background-color: #61A036;
           border-radius: 0.365vw;
           border: none;
           color: white;
-          font-size: 0.365vw;
+          font-size: 0.833vw;
           font-family: "Gotham" !important;
           font-weight: 400 !important;
           line-height: 0.781vw; }
@@ -986,8 +989,8 @@ main {
         line-height: 1.094vw;
         padding-bottom: 1.302vw; }
       .popular .wrapper .popular_footer .popular-footer-button {
-        width: 11.719vw;
-        height: 2.604vw;
+        white-space: normal;
+        padding: 0.833vw 1.823vw;
         background-color: #61A036;
         border-radius: 0.365vw;
         border: none;
