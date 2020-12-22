@@ -505,10 +505,16 @@ main {
       width: 40px;
       height: 40px;
       margin-right: 25px; }
+      .intro .wrapper .swiper-container .swiper-button-next img {
+        width: 40px;
+        height: 40px; }
     .intro .wrapper .swiper-container .swiper-button-prev {
       width: 40px;
       height: 40px;
       margin-left: 25px; }
+      .intro .wrapper .swiper-container .swiper-button-prev img {
+        width: 40px;
+        height: 40px; }
 
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -672,7 +678,7 @@ main {
       padding-bottom: 25px; }
     .popular .wrapper .popular_footer .popular-footer-button {
       white-space: normal;
-      padding: 16px 35px;
+      padding: 16px 40px;
       background-color: #61A036;
       border-radius: 7px;
       border: none;
@@ -846,11 +852,21 @@ main {
         width: 2.083vw;
         height: 2.083vw; }
       .intro .wrapper .swiper-container .swiper-button-next {
+        transform: translateY(50%);
         width: 2.083vw;
-        height: 2.083vw; }
+        height: 2.083vw;
+        margin-right: 1.302vw; }
+        .intro .wrapper .swiper-container .swiper-button-next img {
+          width: 2.083vw;
+          height: 2.083vw; }
       .intro .wrapper .swiper-container .swiper-button-prev {
+        transform: translateY(50%);
         width: 2.083vw;
-        height: 2.083vw; }
+        height: 2.083vw;
+        margin-left: 1.302vw; }
+        .intro .wrapper .swiper-container .swiper-button-prev img {
+          width: 2.083vw;
+          height: 2.083vw; }
   .categories {
     width: 75vw;
     margin: 0 auto; }
@@ -990,7 +1006,7 @@ main {
         padding-bottom: 1.302vw; }
       .popular .wrapper .popular_footer .popular-footer-button {
         white-space: normal;
-        padding: 0.833vw 1.823vw;
+        padding: 0.833vw 2.083vw;
         background-color: #61A036;
         border-radius: 0.365vw;
         border: none;
