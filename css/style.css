@@ -458,6 +458,8 @@ main {
     display: flex;
     justify-content: space-between;
     margin: 37px 0 40px 0; }
+    .search .wrapper .desktop-2 {
+      display: none; }
     .search .wrapper input {
       padding: 14px 23px;
       background: 0;
@@ -797,7 +799,21 @@ main {
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
-/* ------==========MEDIA=========------ */
+/* ------========================------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---------------MEDIA---------------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------========================------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* --------=========1920=======-------- */
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -813,6 +829,8 @@ main {
       display: flex;
       justify-content: space-between;
       margin: 1.927vw 0 2.083vw 0; }
+      .search .wrapper .desktop-2 {
+        display: none; }
       .search .wrapper input {
         padding: 0.729vw 1.198vw;
         background: 0;
@@ -852,7 +870,6 @@ main {
         width: 2.083vw;
         height: 2.083vw; }
       .intro .wrapper .swiper-container .swiper-button-next {
-        transform: translateY(50%);
         width: 2.083vw;
         height: 2.083vw;
         margin-right: 1.302vw; }
@@ -860,7 +877,6 @@ main {
           width: 2.083vw;
           height: 2.083vw; }
       .intro .wrapper .swiper-container .swiper-button-prev {
-        transform: translateY(50%);
         width: 2.083vw;
         height: 2.083vw;
         margin-left: 1.302vw; }
@@ -1046,41 +1062,229 @@ main {
             font-family: "Gotham" !important;
             font-weight: 400 !important; } }
 
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* --------=========768========-------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
 @media screen and (max-width: 768px) {
   .wrapper {
-    width: 100vw; }
+    width: 97vw; }
   .search {
-    width: 100vw;
-    margin: 0 auto; }
+    width: 100%;
+    display: flex;
+    justify-content: center; }
     .search .wrapper {
       border: 2px solid #61a036;
-      border-radius: 0.365vw;
+      border-radius: 7px;
       display: flex;
       justify-content: space-between;
-      margin: 1.927vw 0 2.083vw 0; }
+      margin: 2.865vw 0 1.953vw 0; }
+      .search .wrapper .desktop-1 {
+        display: none; }
+      .search .wrapper .desktop-2 {
+        display: flex; }
       .search .wrapper input {
-        padding: 0.729vw 1.198vw;
+        padding: 1.823vw 2.995vw;
         background: 0;
         border: 0;
-        width: 90vw;
+        width: 100%;
         font-family: "Roboto" !important;
         font-weight: 400 !important;
-        font-size: 0.938vw;
+        font-size: 2.344vw;
         line-height: 175%; }
         .search .wrapper input::placeholder {
           font-family: "Roboto" !important;
           font-weight: 400 !important;
-          font-size: 0.938vw;
+          font-size: 2.344vw;
           line-height: 175%;
           color: #828282; }
       .search .wrapper a {
         background: #61a036;
-        min-width: 8.073vw;
-        padding: 0.677vw 2.344vw;
-        font-size: 0.938vw;
+        padding: 1.953vw 3.859vw;
+        font-size: 2.344vw;
         line-height: 175%;
         color: #ffffff;
         font-family: "Gotham" !important;
-        font-weight: 400 !important; } }
+        font-weight: 400 !important; }
+  .intro {
+    margin-bottom: 1.953vw; }
+    .intro .wrapper .swiper-container {
+      width: 100%;
+      height: 23.438vw;
+      border-radius: 0px; }
+      .intro .wrapper .swiper-container .swiper-wrapper {
+        width: 100%;
+        height: 100%; }
+      .intro .wrapper .swiper-container .swiper-button-next:after, .intro .wrapper .swiper-container .swiper-button-prev:after {
+        display: none; }
+      .intro .wrapper .swiper-container .swiper-button-next {
+        width: 40px;
+        height: 40px;
+        margin-right: 13px; }
+        .intro .wrapper .swiper-container .swiper-button-next img {
+          width: 40px;
+          height: 40px; }
+      .intro .wrapper .swiper-container .swiper-button-prev {
+        position: absolute;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        margin-left: 13px; }
+        .intro .wrapper .swiper-container .swiper-button-prev img {
+          width: 40px;
+          height: 40px; }
+  .categories {
+    width: 100%; }
+    .categories .wrapper {
+      display: flex;
+      justify-content: center; }
+      .categories .wrapper .categories_blk {
+        width: 17.188vw;
+        padding: 1.693vw 2.344vw 0.563vw 2.344vw;
+        display: block;
+        border: 1px solid #d2d2d2;
+        box-sizing: border-box;
+        border-radius: 7px;
+        margin-right: 2.783vw; }
+        .categories .wrapper .categories_blk:last-child {
+          margin-right: 0; }
+        .categories .wrapper .categories_blk .blk_img {
+          width: 12.370vw;
+          height: 8.984vw;
+          margin-bottom: 2.604vw; }
+        .categories .wrapper .categories_blk .blk_title {
+          text-align: center;
+          font-size: 1.823vw;
+          line-height: 3.646vw;
+          font-family: "Roboto" !important;
+          font-weight: 500 !important;
+          color: #333333; }
+  .welcome {
+    margin: 7.813vw 0 0 0; }
+    .welcome .wrapper {
+      display: flex;
+      flex-direction: column; }
+      .welcome .wrapper .welcome_title {
+        font-size: 3.125vw;
+        line-height: 2.865vw;
+        font-family: "Gotham" !important;
+        font-weight: 500 !important;
+        text-align: center;
+        padding: 0 0 1.953vw 0; }
+      .welcome .wrapper .welcome_sub-title p {
+        font-size: 1.823vw;
+        line-height: 3.125vw;
+        font-family: "Gotham" !important;
+        font-weight: 400 !important; }
+  .popular .wrapper {
+    display: flex;
+    flex-direction: column; }
+    .popular .wrapper .welcome_title {
+      font-size: 3.125vw;
+      line-height: 2.865vw;
+      font-family: "Gotham" !important;
+      font-weight: 500 !important;
+      text-align: center;
+      margin: 60px 0 40px 0; }
+    .popular .wrapper .popular_blocks {
+      display: flex;
+      justify-content: space-between;
+      padding-right: 65px;
+      overflow-x: auto; }
+      .popular .wrapper .popular_blocks .popular_blk {
+        width: 29.297vw;
+        margin-right: 34px;
+        position: relative; }
+        .popular .wrapper .popular_blocks .popular_blk .popular_img {
+          width: 29.297vw;
+          height: 26.042vw;
+          border-radius: 7px; }
+        .popular .wrapper .popular_blocks .popular_blk .popular_country {
+          font-size: 1.823vw;
+          font-family: "Gotham" !important;
+          font-weight: 500 !important;
+          line-height: 3.125vw;
+          padding: 1.302vw 0 1.302vw; }
+        .popular .wrapper .popular_blocks .popular_blk .popular_title {
+          font-size: 1.823vw;
+          font-family: "Gotham" !important;
+          font-weight: 500 !important;
+          line-height: 3.125vw; }
+        .popular .wrapper .popular_blocks .popular_blk .popular_description {
+          font-size: 1.693vw;
+          font-family: "Gotham" !important;
+          font-weight: 400 !important;
+          line-height: 2.214vw;
+          margin-bottom: 4.557vw; }
+        .popular .wrapper .popular_blocks .popular_blk .popular_availability {
+          font-size: 2.083vw;
+          font-family: "Gotham" !important;
+          font-weight: 400 !important;
+          line-height: 1.953vw;
+          margin-bottom: 2.604vw; }
+        .popular .wrapper .popular_blocks .popular_blk .popular_availability-bold {
+          font-family: "Gotham" !important;
+          font-weight: 700 !important; }
+        .popular .wrapper .popular_blocks .popular_blk .popular_crossed-price {
+          font-size: 1.823vw;
+          font-family: "Gotham" !important;
+          font-weight: 400 !important;
+          line-height: 1.693vw;
+          color: #818181;
+          text-decoration-line: line-through;
+          padding-bottom: 2.604vw; }
+        .popular .wrapper .popular_blocks .popular_blk .popular_price {
+          font-size: 3.125vw;
+          font-family: "Gotham" !important;
+          font-weight: 500 !important;
+          line-height: 2.995vw;
+          padding-bottom: 3.906vw; }
+        .popular .wrapper .popular_blocks .popular_blk .popular_price-little {
+          font-size: 1.693vw;
+          line-height: 1.593vw; }
+        .popular .wrapper .popular_blocks .popular_blk .popular_buy-minimum {
+          font-size: 1.563vw;
+          font-family: "Gotham" !important;
+          font-weight: 400 !important;
+          line-height: 1.432vw;
+          padding-bottom: 1.953vw; }
+        .popular .wrapper .popular_blocks .popular_blk .popular_button {
+          width: 100%;
+          position: absolute;
+          white-space: normal;
+          padding: 16px 35px;
+          background-color: #61A036;
+          border-radius: 7px;
+          color: white;
+          font-size: 1.823vw;
+          font-family: "Gotham" !important;
+          font-weight: 400 !important;
+          line-height: 15px;
+          text-align: center; }
+    .popular .wrapper .popular_footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 120px; }
+      .popular .wrapper .popular_footer .popular-footer-p {
+        font-size: 18px;
+        font-family: "Roboto" !important;
+        font-weight: 400 !important;
+        line-height: 21px;
+        padding-bottom: 25px; }
+      .popular .wrapper .popular_footer .popular-footer-button {
+        white-space: normal;
+        padding: 16px 40px;
+        background-color: #61A036;
+        border-radius: 7px;
+        border: none;
+        color: white;
+        font-size: 16px;
+        font-family: "Gotham" !important;
+        font-weight: 400 !important;
+        line-height: 15px; } }
 
 /*# sourceMappingURL=style.css.map */
