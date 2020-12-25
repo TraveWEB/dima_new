@@ -807,7 +807,7 @@ main {
         }
         .popular_button {
           width: 100%;
-          position: absolute;
+          display: block;
           white-space: normal;
           padding: 16px 35px;
           background-color: #61A036;
@@ -1026,10 +1026,7 @@ main {
     margin: 0 auto;
   
     .wrapper {
-      border: 2px solid #61a036;
       border-radius: 0.365vw;
-      display: flex;
-      justify-content: space-between;
       margin: 1.927vw 0 2.083vw 0;
 
       .desktop-2 {
@@ -1038,29 +1035,18 @@ main {
   
       input {
         padding: 0.729vw 1.198vw;
-        background: 0;
-        border: 0;
         width: 75vw;
-        @include Roboto(400);
         font-size: 0.938vw;
-        line-height: 175%;
   
         &::placeholder {
-          @include Roboto(400);
           font-size: 0.938vw;
-          line-height: 175%;
-          color: #828282;
         }
       }
   
       a {
-        background: #61a036;
         min-width: 8.073vw;
         padding: 0.677vw 2.344vw;
         font-size: 0.938vw;
-        line-height: 175%;
-        color: #ffffff;
-        @include Gotham(400);
       }
     }
   }
@@ -1130,21 +1116,13 @@ main {
   margin: 0 auto;
 
   .wrapper {
-    display: flex;
-    justify-content: center;
 
     .categories_blk {
       width: 13.698vw;
       padding: 0.417vw 1.615vw 1.094vw 1.615vw;
       display: block;
-      border: 1px solid #d2d2d2;
-      box-sizing: border-box;
       border-radius: 0.365vw;
       margin-right: 1.615vw;
-
-      &:last-child {
-        margin-right: 0;
-      }
 
       .blk_img {
         width: 10.417vw;
@@ -1153,11 +1131,8 @@ main {
       }
 
       .blk_title {
-        text-align: center;
         font-size: 1.250vw;
         line-height: 1.458vw;
-        @include Roboto(500);
-        color: #333333;
       }
     }
   }
@@ -1169,14 +1144,10 @@ main {
   margin: 3.125vw 0 0 0;
 
   .wrapper {
-    display: flex;
-    flex-direction: column;
 
     .welcome_title {
       font-size: 2.500vw;
       line-height: 2.344vw;
-      @include Gotham(500);
-      text-align: center;
       padding: 0 0 1.563vw 0;
     }
 
@@ -1185,7 +1156,6 @@ main {
       p {
         font-size: 0.938vw;
         line-height: 1.615vw;
-        @include Gotham(400);
       }
     }
   }
@@ -1196,20 +1166,14 @@ main {
 .popular {
 
   .wrapper {
-    display: flex;
-    flex-direction: column;
 
     .welcome_title {
       font-size: 2.500vw;
       line-height: 2.344vw;
-      @include Gotham(500);
-      text-align: center;
       margin: 3.125vw 0 2.083vw 0;
     }
 
     .popular_blocks {
-      display: flex;
-      justify-content: space-between;
 
       .popular_blk {
         width: 13.698vw;
@@ -1221,42 +1185,32 @@ main {
         }
         .popular_country {
           font-size: 0.938vw;
-          @include Gotham(500);
           line-height: 0.885vw;
           padding: 0.781vw 0 0.781vw;
         }
         .popular_title {
           font-size: 1.250vw;
-          @include Gotham(500);
           line-height: 1.146vw;
           padding-bottom: 0.781vw;
         }
         .popular_description {
           font-size: 0.938vw;
-          @include Gotham(400);
           line-height: 0.885vw;
           margin-bottom: 0.781vw;
         }
         .popular_availability {
           font-size: 0.833vw;
-          @include Gotham(400);
           line-height: 0.781vw;
           margin-bottom: 1.563vw;
         }
-        .popular_availability-bold {
-          @include Gotham(700);
-        }
+
         .popular_crossed-price {
           font-size: 0.938vw;
-          @include Gotham(400);
           line-height: 0.885vw;
-          color: #818181;
-          text-decoration-line: line-through;
           padding-bottom: 0.521vw;
         }
         .popular_price {
           font-size: 1.250vw;
-          @include Gotham(500);
           line-height: 1.146vw;
           padding-bottom: 0.781vw;
         }
@@ -1266,47 +1220,30 @@ main {
         }
         .popular_buy-minimum {
           font-size: 0.833vw;
-          @include Gotham(400);
           line-height: 0.781vw;
           padding-bottom: 0.781vw;
         }
         .popular_button {
-          width: 100%;
-          position: absolute;
-          white-space: normal;
           padding: 0.833vw 1.823vw;
-          background-color: #61A036;
           border-radius: 0.365vw;
-          border: none;
-          color: white;
           font-size: 0.833vw;
-          @include Gotham(400);
           line-height: 0.781vw;
         }
       }
     }
 
     .popular_footer {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       margin-top: 6.250vw;
 
       .popular-footer-p {
         font-size: 0.938vw;
-        @include Roboto(400);
         line-height: 1.094vw;
         padding-bottom: 1.302vw;
       }
       .popular-footer-button {
-        white-space: normal;
         padding: 0.833vw 2.083vw;
-        background-color: #61A036;
         border-radius: 0.365vw;
-        border: none;
-        color: white;
         font-size: 0.833vw;
-        @include Gotham(400);
         line-height: 0.781vw;
       }
     }
@@ -1321,29 +1258,18 @@ main {
   margin: 3.125vw 0 3.125vw 0;
 
   .wrapper {
-    display: flex;
-    flex-direction: column;
 
     .advantages_blk {
 
       h2 {
         font-size: 2.500vw;
         line-height: 2.344vw;
-        @include Gotham(500);
-        text-align: center;
         margin: 0 0 2.344vw 0;
       }
     }
     .advantages_blocks {
 
-      display: flex;
-      justify-content: space-between;
-
       .block {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
         width: 13.542vw;
 
         img {
@@ -1354,7 +1280,6 @@ main {
         p {
           font-size: 0.938vw;
           line-height: 1.615vw;
-          @include Gotham(400);
         }
       }
     }
@@ -1380,14 +1305,9 @@ main {
 
   .search {
     width: 100%;
-    display: flex;
-    justify-content: center;
   
     .wrapper {
-      border: 2px solid #61a036;
       border-radius: 7px;
-      display: flex;
-      justify-content: space-between;
       margin: 2.865vw 0 1.953vw 0;
 
       .desktop-1 {
@@ -1400,28 +1320,16 @@ main {
   
       input {
         padding: 1.823vw 2.995vw;
-        background: 0;
-        border: 0;
-        width: 100%;
-        @include Roboto(400);
         font-size: 2.344vw;
-        line-height: 175%;
   
         &::placeholder {
-          @include Roboto(400);
           font-size: 2.344vw;
-          line-height: 175%;
-          color: #828282;
         }
       }
   
       a {
-        background: #61a036;
         padding: 1.953vw 3.859vw;
         font-size: 2.344vw;
-        line-height: 175%;
-        color: #ffffff;
-        @include Gotham(400);
       }
     }
   }
@@ -1484,16 +1392,10 @@ main {
     width: 100%;
   
     .wrapper {
-      display: flex;
-      justify-content: center;
   
       .categories_blk {
         width: 17.188vw;
         padding: 1.693vw 2.344vw 0.563vw 2.344vw;
-        display: block;
-        border: 1px solid #d2d2d2;
-        box-sizing: border-box;
-        border-radius: 7px;
         margin-right: 2.783vw;
   
         &:last-child {
@@ -1507,11 +1409,8 @@ main {
         }
   
         .blk_title {
-          text-align: center;
           font-size: 1.823vw;
           line-height: 3.646vw;
-          @include Roboto(500);
-          color: #333333;
         }
       }
     }
@@ -1523,14 +1422,10 @@ main {
     margin: 7.813vw 0 0 0;
   
     .wrapper {
-      display: flex;
-      flex-direction: column;
   
       .welcome_title {
         font-size: 3.125vw;
         line-height: 2.865vw;
-        @include Gotham(500);
-        text-align: center;
         padding: 0 0 1.953vw 0;
       }
   
@@ -1539,7 +1434,6 @@ main {
         p {
           font-size: 1.823vw;
           line-height: 3.125vw;
-          @include Gotham(400);
         }
       }
     }
@@ -1549,22 +1443,15 @@ main {
 
 
   .popular {
-
     .wrapper {
-      display: flex;
-      flex-direction: column;
   
       .welcome_title {
         font-size: 3.125vw;
         line-height: 2.865vw;
-        @include Gotham(500);
-        text-align: center;
-        margin: 60px 0 40px 0;
+        margin: 7.813vw 0 1.953vw 0;
       }
   
       .popular_blocks {
-        display: flex;
-        justify-content: space-between;
         padding-right: 65px;
         overflow-x: auto;
   
@@ -1580,74 +1467,55 @@ main {
           }
           .popular_country {
             font-size: 1.823vw;
-            @include Gotham(500);
             line-height: 3.125vw;
             padding: 1.302vw 0 1.302vw;
           }
           .popular_title {
             font-size: 1.823vw;
-            @include Gotham(500);
             line-height: 3.125vw;
           }
           .popular_description {
             font-size: 1.693vw;
-            @include Gotham(400);
             line-height: 2.214vw;
             margin-bottom: 4.557vw;
           }
           .popular_availability {
             font-size: 2.083vw;
-            @include Gotham(400);
             line-height: 1.953vw;
             margin-bottom: 2.604vw;
           }
-          .popular_availability-bold {
-            @include Gotham(700);
-          }
           .popular_crossed-price {
             font-size: 1.823vw;
-            @include Gotham(400);
             line-height: 1.693vw;
-            color: #818181;
-            text-decoration-line: line-through;
-            padding-bottom: 2.604vw;
+            padding-bottom: 2vw;
           }
           .popular_price {
             font-size: 3.125vw;
-            @include Gotham(500);
             line-height: 2.995vw;
             padding-bottom: 3.906vw;
-          }
-          .popular_price-little {
-            font-size: 1.693vw;
-            line-height: 1.593vw;
+
+            .popular-price-little {
+              font-size: 1.693vw;
+              line-height: 1.593vw;
+            }
           }
           .popular_buy-minimum {
             font-size: 1.563vw;
-            @include Gotham(400);
             line-height: 1.432vw;
             padding-bottom: 1.953vw;
           }
           .popular_button {
             width: 100%;
-            position: absolute;
-            white-space: normal;
-            padding: 16px 35px;
-            background-color: #61A036;
+            padding: 2.083vw 4.557vw;
             border-radius: 7px;
-            color: white;
             font-size: 1.823vw;
-            @include Gotham(400);
-            line-height: 15px;
-            text-align: center;
+            line-height: 1.953vw
+            ;
           }
         }
       }
   
       .popular_footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         margin-top: 120px;
   
         .popular-footer-p {
@@ -1670,6 +1538,22 @@ main {
         }
       }
     }
+
+
+    ::-webkit-scrollbar {
+      width: 728px; /* ширина для вертикального скролла */
+      height: 10px; /* высота для горизонтального скролла */
+      background: white;
+      border-radius: 7px;
+      border: 2px solid #61a036;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #61a036;
+    border-radius: 7px;
+}
+
+
   }
 
 
