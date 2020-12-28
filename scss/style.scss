@@ -655,6 +655,10 @@ main {
     display: flex;
     justify-content: center;
 
+    .categories_blk_mobile {
+      display: none;
+    }
+
     .categories_blk {
       width: 263px;
       padding: 8px 31px 21px 31px;
@@ -1330,6 +1334,9 @@ main {
       a {
         padding: 1.953vw 3.859vw;
         font-size: 2.344vw;
+        border-radius: 0.911vw;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
       }
     }
   }
@@ -1448,7 +1455,7 @@ main {
       .welcome_title {
         font-size: 3.125vw;
         line-height: 2.865vw;
-        margin: 7.813vw 0 1.953vw 0;
+        margin: 7.813vw 0 2.5vw 0;
       }
   
       .popular_blocks {
@@ -1459,6 +1466,7 @@ main {
           width: 29.297vw;
           margin-right: 34px;
           position: relative;
+          padding-bottom: 3vw;
   
           .popular_img {
             width: 29.297vw;
@@ -1516,45 +1524,186 @@ main {
       }
   
       .popular_footer {
-        margin-top: 120px;
+        margin-top: 3.255vw;
   
         .popular-footer-p {
-          font-size: 18px;
+          letter-spacing: 1px;
+          font-size: 2.344vw;
           @include Roboto(400);
-          line-height: 21px;
-          padding-bottom: 25px;
+          line-height: 2.734vw;
+          padding-bottom: 3.255vw;
         }
 
         .popular-footer-button {
           white-space: normal;
-          padding: 16px 40px;
+          padding: 2.214vw 5.859vw;
           background-color: #61A036;
           border-radius: 7px;
           border: none;
           color: white;
-          font-size: 16px;
+          font-size: 1.823vw;
           @include Gotham(400);
-          line-height: 15px;
+          line-height: 1.953vw;
         }
       }
     }
+    
 
 
-    ::-webkit-scrollbar {
-      width: 728px; /* ширина для вертикального скролла */
-      height: 10px; /* высота для горизонтального скролла */
-      background: white;
-      border-radius: 7px;
-      border: 2px solid #61a036;
+    ::-webkit-scrollbar-track
+    {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        background-color: #F5F5F5;
+    }
+    
+    ::-webkit-scrollbar
+    {
+        width: 10px;
+        background-color: #F5F5F5;
+    }
+    
+    ::-webkit-scrollbar-thumb
+    {
+        background-color: #000000;
+        border: 2px solid white;
+    }
+    
+    
   }
 
-  ::-webkit-scrollbar-thumb {
-    background-color: #61a036;
-    border-radius: 7px;
+
+
+
+  .advantages {
+    margin: 5.859vw 0 9.505vw 0;
+  
+    .wrapper {
+  
+      .advantages_blk {
+  
+        h2 {
+          font-size: 6.3.125vw;
+          line-height: 2.865vw;
+          margin: 0 0 4.948vw 0;
+        }
+      }
+      .advantages_blocks {
+  
+        .block {
+          width: 17.839vw;
+  
+          img {
+            margin: 0 0 1.042vw 0;
+            width: 8.464vw;
+            height: 8.464vw;
+          }
+          p {
+            font-size: 1.432vw;
+            line-height: 2.474vw;
+          }
+        }
+      }
+    }
+  }
+
+
 }
 
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* --------=========320========-------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
 
+@media screen and (max-width: 520px) {
+  
+  .search {
+  
+    .wrapper {
+      margin: 0 0 1.346vw 0;
+      border-radius: 1.588vw;
+  
+      input {
+        padding: 2.115vw 0.962vw;
+        font-size: 2.115vw;
+  
+        &::placeholder {
+          font-size: 2.115vw;
+        }
+      }
+  
+      a {
+        min-width: 0.962vw;
+        padding: 2.308vw 2.885vw;
+        border-radius: 1.588vw;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        
+      }
+      img {
+        width: 3.269vw;
+        height: 3.269vw;
+      }
+    }
   }
+  
+
+
+  .intro {  
+    margin-bottom: 40px;
+  
+    .wrapper {
+  
+      .swiper-container {
+        width: 100%;
+        height: 40.625vw;
+        border-radius: 1.588vw;
+  
+        .swiper-wrapper {
+          width: 100%;
+          height: 100%;
+        }
+        
+        .swiper-button-next {
+          margin-right: 0px;
+        }
+  
+        .swiper-button-prev {
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+
+
+
+
+  .categories {
+    width: 100%;
+  
+    .wrapper {
+   
+      .categories_blk_mobile {
+        display: flex;
+        font-size: 4.063vw;
+        @include Gotham(400);
+      }
+  
+      .categories_blk {
+        display: none;
+
+        .blk_img {
+          display: none;
+        }
+        .blk_title {
+          display: none;
+        }
+      }
+    }
+  }
+
 
 
 
